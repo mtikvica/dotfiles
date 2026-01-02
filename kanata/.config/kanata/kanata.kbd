@@ -1,0 +1,39 @@
+;; Enable processing of unmapped keys (so other keys work normally)
+(defcfg
+  process-unmapped-keys yes
+)
+
+;; Define source keys that will be remapped
+(defsrc
+  caps a s d f j k l ;
+)
+
+;; Set timing variables for tap-hold functionality
+(defvar
+  tap-time 150  ;; Time (ms) before a tap is registered
+  hold-time 200 ;; Time (ms) before a hold is registered
+)
+
+;; Define key remappings with tap-hold behavior
+(defalias
+
+  escctrl esc
+  
+  ;; Home row mods (mapping regular keys to modifiers when held)
+  a (multi f24 (tap-hold $tap-time $hold-time a lmet))  ;; A → Left Meta (Super) on hold
+  s (multi f24 (tap-hold $tap-time $hold-time s lalt))  ;; S → Left Alt on hold
+  d (multi f24 (tap-hold $tap-time $hold-time d lsft))  ;; D → Left Shift on hold
+  f (multi f24 (tap-hold $tap-time $hold-time f lctl))  ;; F → Left Ctrl on hold
+
+  j (multi f24 (tap-hold $tap-time $hold-time j rctl))  ;; J → Right Ctrl on hold
+  k (multi f24 (tap-hold $tap-time $hold-time k rsft))  ;; K → Right Shift on hold
+  l (multi f24 (tap-hold $tap-time $hold-time l ralt))  ;; L → Right Alt on hold
+  ; (multi f24 (tap-hold $tap-time $hold-time ; rmet))  ;; ; → Right Meta (Super) on hold
+)
+
+;; Define the main keyboard layer with the remapped keys
+(deflayer base
+  @escctrl  ;; Caps Lock remap
+  @a @s @d @f  ;; Left-hand home row remaps
+  @j @k @l @;  ;; Right-hand home row remaps
+)
