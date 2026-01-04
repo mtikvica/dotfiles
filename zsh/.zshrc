@@ -27,7 +27,7 @@ zstyle ':omz:update' frequency 13
 DISABLE_UNTRACKED_FILES_DIRTY="true"
 
 # Command execution timestamp format
-HIST_STAMPS="yyyy-mm-dd"
+HIST_STAMPS="dd-mm-yyyy"
 
 # ============================================
 # Plugins
@@ -135,12 +135,6 @@ alias ..='cd ..'
 alias ...='cd ../..'
 alias ....='cd ../../..'
 alias .....='cd ../../../..'
-
-# Utilities
-alias myip='curl -s https://api.ipify.org && echo'
-alias ports='netstat -tulanp'
-alias usage='du -h -d1'
-alias reload='source ~/.zshrc'
 
 # Quick config edits
 alias zshconfig='nvim ~/.zshrc'
