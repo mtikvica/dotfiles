@@ -14,6 +14,7 @@ bolt
 brightnessctl
 btop
 btrfs-progs
+chromium
 clang
 cups
 cups-browsed
@@ -23,6 +24,8 @@ docker
 docker-buildx
 docker-compose
 dotnet-runtime-8.0
+dotnet-runtime-9.0
+dotnet-sdk
 dotnet-sdk-8.0
 dust
 efibootmgr
@@ -106,7 +109,6 @@ nvidia-open-dkms
 nvidia-utils
 obs-studio
 obsidian
-omarchy-chromium
 omarchy-keyring
 omarchy-nvim
 omarchy-walker
@@ -133,8 +135,6 @@ qt6-wayland
 reflector
 ripgrep
 ruby
-rust
-rust-analyzer
 satty
 sddm
 signal-desktop
