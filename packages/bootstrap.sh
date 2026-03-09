@@ -199,7 +199,7 @@ step "Stowing dotfiles"
 
 cd "$DOTFILES_DIR"
 
-STOW_PACKAGES=(ghostty git kanata nvim tmux zsh)
+STOW_PACKAGES=(ghostty git hypr kanata nvim tmux zsh)
 
 for pkg in "${STOW_PACKAGES[@]}"; do
   if [ -d "$DOTFILES_DIR/$pkg" ]; then
