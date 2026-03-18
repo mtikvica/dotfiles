@@ -226,3 +226,4 @@ fi
 # ============================================
 # Source local configuration (not tracked by git)
 [[ -f ~/.zshrc.local ]] && source ~/.zshrc.local
+export PATH="$HOME/.cargo/bin:$PATH"
