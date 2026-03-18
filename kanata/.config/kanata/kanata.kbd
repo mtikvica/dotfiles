@@ -20,15 +20,14 @@
   escctrl esc
   
   ;; Home row mods (mapping regular keys to modifiers when held)
-  a (multi f24 (tap-hold $tap-time $hold-time a lmet))  ;; A → Left Meta (Super) on hold
-  s (multi f24 (tap-hold $tap-time $hold-time s lalt))  ;; S → Left Alt on hold
-  d (multi f24 (tap-hold $tap-time $hold-time d lsft))  ;; D → Left Shift on hold
-  f (multi f24 (tap-hold $tap-time $hold-time f lctl))  ;; F → Left Ctrl on hold
-
-  j (multi f24 (tap-hold $tap-time $hold-time j rctl))  ;; J → Right Ctrl on hold
-  k (multi f24 (tap-hold $tap-time $hold-time k rsft))  ;; K → Right Shift on hold
-  l (multi f24 (tap-hold $tap-time $hold-time l ralt))  ;; L → Right Alt on hold
-  ; (multi f24 (tap-hold $tap-time $hold-time ; rmet))  ;; ; → Right Meta (Super) on hold
+  a (tap-hold $tap-time $hold-time a lmet)
+  s (tap-hold $tap-time $hold-time s lalt)
+  d (tap-hold $tap-time $hold-time d lsft)
+  f (tap-hold $tap-time $hold-time f lctl)
+  j (tap-hold $tap-time $hold-time j rctl)
+  k (tap-hold $tap-time $hold-time k rsft)
+  l (tap-hold $tap-time $hold-time l ralt)
+  ; (tap-hold $tap-time $hold-time ; rmet)
 )
 
 ;; Define the main keyboard layer with the remapped keys
