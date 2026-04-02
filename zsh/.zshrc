@@ -227,3 +227,6 @@ fi
 # Source local configuration (not tracked by git)
 [[ -f ~/.zshrc.local ]] && source ~/.zshrc.local
 export PATH="$HOME/.cargo/bin:$PATH"
+export DOTNET_ROOT=$HOME/.dotnet
+export PATH=$HOME/.dotnet:$PATH
+export DOTNET_CLI_TELEMETRY_OPTOUT=1

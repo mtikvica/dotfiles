@@ -30,6 +30,7 @@
   "mini.diff": { "branch": "main", "commit": "ff3cd5e76e812fa18bde0f8126d6f3bb62008c79" },
   "mini.icons": { "branch": "main", "commit": "5b9076dae1bfbe47ba4a14bc8b967cde0ab5d77e" },
   "mini.move": { "branch": "main", "commit": "b8ba0b77e91b5f0fe8e014e03f7f59799dec1d96" },
+  "mini.nvim": { "branch": "main", "commit": "28d993854bdcde7d06f0990cfe6a2c6577f3f8ab" },
   "mini.pairs": { "branch": "main", "commit": "b7fde3719340946feb75017ef9d75edebdeb0566" },
   "mini.snippets": { "branch": "main", "commit": "0d0b435e3f9563965f73703a6a6d17acb432a93c" },
   "mini.surround": { "branch": "main", "commit": "d205d1741d1fcc1f3117b4e839bf00f74ad72fa2" },
